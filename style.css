@@ -7,7 +7,7 @@
 
 :root {
   --gray: rgb(204, 202, 202);
-  --white: #fff;
+  --gray: rgb(148, 147, 147);
 }
 
 html {
@@ -23,6 +23,11 @@ body {
 
 .mr-xs {
   margin-right: 1rem;
+}
+
+.container {
+  width: 80.625rem;
+  max-width: 100%;
 }
 
 .info {
@@ -45,7 +50,8 @@ body {
 
 .color-items-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-auto-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
   height: 90vh;
 }
@@ -57,5 +63,6 @@ body {
   align-items: center;
   padding-bottom: 1.5rem;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1rem;
+  box-shadow: 2px 2px 7px -1px rgba(0,0,0,0.75);
 }
