@@ -9,29 +9,42 @@
   <title>Random Color</title>
 </head>
 <body>
-  <div class="container">
-    <div class="info">
-      <span>Press the spacebar to generate random colors</span>
+  <header class="bg-light-gray">
+    <div class="container">
+      <div class="info">
+        <p>
+          Press the spacebar to generate random colors
+        </p>
 
-      <div class="choices">
-        <p class="mr-xs">Random colors from: </p>
+        <div class="choices">
+          <p class="mr-xs choices__description">Random colors from: </p>
 
-        <form name="myForm">
-          <input type="radio" name="color" id="red" value="red">
-          <label for="red" class="input-label">Red</label>
+          <div>
+            <form name="myForm">
+              <input type="radio" name="color" id="red" value="red">
+              <label for="red" class="input-label">Red</label>
 
-          <input type="radio" name="color" id="green" value="green">
-          <label for="green" class="input-label">Green</label>
+              <input type="radio" name="color" id="green" value="green">
+              <label for="green" class="input-label">Green</label>
 
-          <input type="radio" name="color" id="blue" value="blue">
-          <label for="blue" class="input-label">Blue</label>
-        </form>
+              <input type="radio" name="color" id="blue" value="blue">
+              <label for="blue" class="input-label">Blue</label>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="color-items-container js-add-items"></div>
-  </div>
-  
+  <main>
+    <div class="container">
+      <div class="color-items-container js-add-items"></div>
+    </div>
+  </main>
+
+  <footer class="bg-light-gray footer">
+    <span>By Kiet Nguyen</span>
+  </footer>
 
   <script src="index.js"></script>
 </body>
